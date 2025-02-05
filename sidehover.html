@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        /* Style for the sidebar */
+        .sidenav {
+            height: 100%;
+            width: 60px; /* Initial width of the sidebar */
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            transition: width 0.3s; /* Smooth transition for width */
+        }
+
+        .sidenav a {
+            display: block;
+            padding: 16px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            background-color: #444;
+            margin: 8px 0;
+            border-radius: 4px;
+            opacity: 0; /* Initially hide text */
+            transition: opacity 0.3s ease;
+        }
+
+        /* Hover effect on the sidebar */
+        .sidenav:hover {
+            width: 200px; /* Sidebar expands when hovered */
+        }
+
+        .sidenav a:hover {
+            background-color: #555; /* Change button color on hover */
+        }
+
+        /* Make the text appear when sidebar is hovered */
+        .sidenav:hover a {
+            opacity: 1;
+        }
+
+        /* Styling for the content */
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin-left: 70px; /* Space for the sidenav */
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        p {
+            color: rgb(120, 156, 185);
+            line-height: 1.6;
+        }
+
+        /* Styling for individual side nav buttons */
+        #about {
+            top: 20px;
+            background-color: #04AA6D;
+        }
+
+        #blog {
+            top: 80px;
+            background-color: #2196F3;
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #f44336;
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidenav" id="mySidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Blog</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <h1>Welcome to the Avengers Tower</h1>
+        <p>Avengers Tower is a prominent skyscraper located in New York City within the Marvel Cinematic Universe (MCU). 
+            It serves as the headquarters for the Avengers, a team of superheroes, and is equipped with advanced technology, 
+            state-of-the-art facilities, and a high-tech command center. The tower plays a key role in the MCU, particularly 
+            in films like "The Avengers" (2012) and "Avengers: Age of Ultron" (2015), where it becomes the base of operations for the superhero team.
+            Over time, it becomes symbolic of the Avengers' strength and unity, though it faces destruction in later 
+            films like "Avengers: Endgame" (2019).
+        </p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--</doctype html>
+<html>
+    <head> 
+        <title>
+            Hoverable Sidenav Buttons
+        </title>
+        #mySidenav a {
+            position: absolute;
+            left: -80px;
+            transition: 0.3s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+          }
+          
+        <style>
+            .sidenav {
+    height: 100%;
+    width: 60px; /* Initial width of the sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    transition: width 0.3s; /* Smooth transition for width */
+}
+
+.sidenav a {
+    display: block;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: #444;
+    margin: 8px 0;
+    border-radius: 4px;
+    opacity: 0; /* Initially hide text */
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect on the sidebar */
+.sidenav:hover {
+    width: 200px; /* Sidebar expands when hovered */
+}
+
+.sidenav a:hover {
+    background-color: #555; /* Change button color on hover */
+}
+
+/* Make the text appear when sidebar is hovered */
+.sidenav:hover a {
+    opacity: 1;
+}
+
+/* Content section style */
+.content {
+    margin-left: 70px;
+    padding: 20px;
+}
+                body{
+                    background-color: black;
+
+                }
+                h1{
+                     color: brown;
+                }
+                p{
+                    color: rgb(120, 156, 185);
+                }
+                #mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+        </style>
+         <body>
+            <div class ="side nav">
+                       <a href="#" class="btn">about</a>  
+                       <a href="#" class="btn":>blog</a> 
+                       <a href="#" class="btn":>project</a>
+                       <a href="#" class="btn":>contact</a>                          
+                </div>
+        </body>
+        <h1>Welcome to the Avengers Tower </h1>
+        <p>Avengers Tower is a prominent skyscraper located in New York City within the Marvel Cinematic Universe (MCU). 
+            It serves as the headquarters for the Avengers, a team of superheroes, and is equipped with advanced technology, 
+            state-of-the-art facilities, and a high-tech command center. The tower plays a key role in the MCU, particularly 
+            in films like "The Avengers" (2012) and "Avengers: Age of Ultron" (2015), where it becomes the base of operations for the superhero team.
+             Over time, it becomes symbolic of the Avengers' strength and unity, though it faces destruction in later 
+             films like "Avengers: Endgame" (2019).</p>
+    </head>
+</html>-->>
